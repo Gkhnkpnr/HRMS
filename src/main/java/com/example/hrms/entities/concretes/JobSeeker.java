@@ -1,14 +1,14 @@
 package com.example.hrms.entities.concretes;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Data
@@ -33,5 +33,11 @@ public class JobSeeker extends User{
     @NotNull
     private LocalDate birthDate;
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "jobseeker", cascade = CascadeType.DETACH)
+    private List<Resume> resumes;
+
+    @OneToMany(mappedBy = "jobseeker", cascade = CascadeType.DETACH)
+    private List<Favorite> favorites;
 
 }

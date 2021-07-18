@@ -8,6 +8,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "job_posts")
@@ -57,6 +58,19 @@ public class JobPost {
     @NotNull
     private boolean isConfirmed = false;
 
+    @ManyToOne()
+    @JoinColumn(name = "employer_id")
+    private Employer employer;
 
+    @ManyToOne()
+    @JoinColumn(name = "job_position_id")
+    private JobPosition jobPosition;
+
+    @ManyToOne()
+    @JoinColumn(name = "city_id")
+    private City city;
+
+    @OneToMany(mappedBy = "jobPost", cascade = CascadeType.DETACH)
+    private List<Favorite> favorites;
 
 }

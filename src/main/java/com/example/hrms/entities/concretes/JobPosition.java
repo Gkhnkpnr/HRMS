@@ -1,11 +1,13 @@
 package com.example.hrms.entities.concretes;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Entity
 @Table(name = "job_positions")
@@ -23,4 +25,8 @@ public class JobPosition {
     @Column(name = "job_title")
     @NotNull
     private String jobTitle;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "jobPosition")
+    private List<JobPost> jobPosts;
 }

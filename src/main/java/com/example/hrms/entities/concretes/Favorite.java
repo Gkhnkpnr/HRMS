@@ -1,33 +1,30 @@
 package com.example.hrms.entities.concretes;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.List;
 
 @Entity
-@Table(name = "cities")
 @Data
-@AllArgsConstructor
+@Table(name = "favorites")
 @NoArgsConstructor
-public class City {
+@AllArgsConstructor
+public class Favorite {
 
     @Id
+    @Column(name ="id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @NotNull
-    @Column(name = "id")
     private int id;
 
-    @Column(name = "city_name")
-    @NotNull
-    private String cityName;
+    @ManyToOne(cascade = CascadeType.DETACH)
+    @JoinColumn(name = "jobseeker_id")
+    private JobSeeker jobSeeker;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "city")
-    private List<JobPost> jobPost;
-
+    @ManyToOne(cascade = CascadeType.DETACH)
+    @JoinColumn(name = "job_post_id")
+    private JobPost jobPost;
 }

@@ -10,24 +10,21 @@ import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Entity
-@Table(name = "cities")
 @Data
-@AllArgsConstructor
+@Table(name = "departments")
 @NoArgsConstructor
-public class City {
-
+@AllArgsConstructor
+public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotNull
     @Column(name = "id")
+    @NotNull
     private int id;
 
-    @Column(name = "city_name")
-    @NotNull
-    private String cityName;
+    @Column(name = "department_name")
+    private String departmentName;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "city")
-    private List<JobPost> jobPost;
-
+    @OneToMany(mappedBy = "department", cascade = CascadeType.DETACH)
+    private List<Education> educations;
 }

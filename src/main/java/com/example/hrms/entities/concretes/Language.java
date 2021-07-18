@@ -9,25 +9,24 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
-@Entity
-@Table(name = "cities")
 @Data
-@AllArgsConstructor
+@Entity
+@Table(name = "languages")
 @NoArgsConstructor
-public class City {
+@AllArgsConstructor
+public class Language {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @NotNull
     @Column(name = "id")
+    @NotNull
     private int id;
 
-    @Column(name = "city_name")
-    @NotNull
-    private String cityName;
+    @Column(name = "language_name")
+    private String languageName;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "city")
-    private List<JobPost> jobPost;
+    @OneToMany(mappedBy = "language", cascade = CascadeType.DETACH)
+    private List<JobSeekerLanguage> jobSeekerLanguages;
 
 }
