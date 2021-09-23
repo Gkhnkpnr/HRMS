@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 public class EmailValidatorManagerAdapter implements EmailCheckService {
     private final EmailValidatorManager emailValidatorManager;
 
+
     @Autowired
     public EmailValidatorManagerAdapter(EmailValidatorManager emailValidatorManager) {
         this.emailValidatorManager = emailValidatorManager;

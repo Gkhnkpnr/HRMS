@@ -11,10 +11,10 @@ import java.util.List;
 public interface EmployerDao extends JpaRepository<Employer, Integer> {
     Employer getEmployerById(int id);
     void deleteEmployerById(int id);
-    List<Employer> getEmployerByUpdatedTrue();
+    List<Employer> getEmployerByIsUpdatedTrue();
 
     @Transactional
     @Modifying
-    @Query("Update Employer set isUpdated =: update where id =:employerId")
+    @Query("Update Employer set isUpdated =:update where id =:employerId")
     void changeIsUpdated(boolean update, int employerId);
 }

@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface JobExperienceDao extends JpaRepository<JobExperience, Integer> {
 
-    List<JobExperience> getJobExperienceByEndDateByResumeId(int id, Sort sort);
+    List<JobExperience> getJobExperienceEndDateByResumeId(int id, Sort sort);
 
     void deleteJobExperienceById(int id);
 }

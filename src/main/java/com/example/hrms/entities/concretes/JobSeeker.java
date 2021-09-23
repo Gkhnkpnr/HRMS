@@ -34,10 +34,10 @@ public class JobSeeker extends User{
     private LocalDate birthDate;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "jobseeker", cascade = CascadeType.DETACH)
+    @OneToMany(mappedBy = "jobSeeker", cascade = CascadeType.DETACH)
     private List<Resume> resumes;
 
-    @OneToMany(mappedBy = "jobseeker", cascade = CascadeType.DETACH)
+    @OneToMany(mappedBy = "jobSeeker", cascade = CascadeType.DETACH)
     private List<Favorite> favorites;
 
 }

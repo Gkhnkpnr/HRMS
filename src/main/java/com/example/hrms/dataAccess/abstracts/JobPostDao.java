@@ -13,7 +13,7 @@ public interface JobPostDao extends JpaRepository<JobPost, Integer> {
     List<JobPost> getJobPostByIsActiveTrueAndEmployer_CompanyName(String companyName);
     List<JobPost> findAllByIsActiveTrue(Sort sort);
     List<JobPost> getJobPostByIsActiveTrueAndIsConfirmedTrue(Pageable pageable);
-    List<JobPost> getJobPostIsActiveTrueAndIsConfirmedTrue();
+    List<JobPost> getJobPostByIsActiveTrueAndIsConfirmedTrue();
     List<JobPost> getJobPostByEmployer_CompanyName(String companyName, Sort sort);
     List<JobPost> getJobPostByEmployerId(int id, Sort sort);
 
@@ -21,9 +21,9 @@ public interface JobPostDao extends JpaRepository<JobPost, Integer> {
     void changeIsActive(boolean active, int jobPostId);
 
     @Query("Update JobPost set isConfirmed =:confirm where id=:jobPostId")
-    void changeIsConfirmed(boolean confirmed, int jopPostId);
+    void changeIsConfirmed(boolean confirm, int jobPostId);
 
     JobPost getJobPostById(int id);
 
-    void deleteByJobPostById(int id);
+    void deleteJobPostById(int id);
 }

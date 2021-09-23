@@ -98,10 +98,10 @@ public class JobPostManager implements JobPostService {
 
     @Override
     public DataResult<List<JobPost>> getJobPostByIsActiveTrueAndIsConfirmedTrue() {
-        if (this.jobPostDao.getJobPostIsActiveTrueAndIsConfirmedTrue().size()>0){
-            return new SuccessDataResult<>(this.jobPostDao.getJobPostIsActiveTrueAndIsConfirmedTrue(),"Onaylı ve Aktif iş ilanları listelendi");
+        if (this.jobPostDao.getJobPostByIsActiveTrueAndIsConfirmedTrue().size()>0){
+            return new SuccessDataResult<>(this.jobPostDao.getJobPostByIsActiveTrueAndIsConfirmedTrue(),"Onaylı ve Aktif iş ilanları listelendi");
         }
-        return new WarningDataResult<>(this.jobPostDao.getJobPostIsActiveTrueAndIsConfirmedTrue(),"Onaylı ve Aktif iş ilanları bulunamadı");
+        return new WarningDataResult<>(this.jobPostDao.getJobPostByIsActiveTrueAndIsConfirmedTrue(),"Onaylı ve Aktif iş ilanları bulunamadı");
     }
 
     @Override
@@ -141,7 +141,7 @@ public class JobPostManager implements JobPostService {
 
     @Override
     public Result deleteJobPostById(int jobPostId) {
-        this.jobPostDao.deleteByJobPostById(jobPostId);
+        this.jobPostDao.deleteJobPostById(jobPostId);
         return new SuccessResult("İş İlanı silindi.");
     }
 }

@@ -33,10 +33,10 @@ public class JobExperienceManager implements JobExperienceService {
     @Override
     public DataResult<List<JobExperience>> getJobExperienceByResumeId(int id) {
         Sort sort = Sort.by(Sort.Direction.DESC, "endDate");
-        if (this.jobExperienceDao.getJobExperienceByEndDateByResumeId(id, sort).isEmpty()){
+        if (this.jobExperienceDao.getJobExperienceEndDateByResumeId(id, sort).isEmpty()){
             return new WarningDataResult<>("listelenecek iş tecrübesi bulunamadı");
         }else{
-            return new SuccessDataResult<>(this.jobExperienceDao.getJobExperienceByEndDateByResumeId(id, sort),"İş tecrübeleri başarılı bir şekilde sıralanıp listelendi.");
+            return new SuccessDataResult<>(this.jobExperienceDao.getJobExperienceEndDateByResumeId(id, sort),"İş tecrübeleri başarılı bir şekilde sıralanıp listelendi.");
         }
     }
 

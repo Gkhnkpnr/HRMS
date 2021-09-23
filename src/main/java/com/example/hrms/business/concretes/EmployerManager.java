@@ -120,8 +120,8 @@ public class EmployerManager implements EmployerService {
     }
 
     @Override
-    public DataResult<List<Employer>> getEmployerByUpdatedTrue() {
-        return new SuccessDataResult<>(this.employerDao.getEmployerByUpdatedTrue(), "Bilgilerini güncellemek isteyen şirketler başarıyla listelendi");
+    public DataResult<List<Employer>> getEmployerByIsUpdatedTrue() {
+        return new SuccessDataResult<>(this.employerDao.getEmployerByIsUpdatedTrue(), "Bilgilerini güncellemek isteyen şirketler başarıyla listelendi");
     }
 
     @Override
