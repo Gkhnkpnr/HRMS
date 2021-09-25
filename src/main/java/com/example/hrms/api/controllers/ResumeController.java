@@ -7,15 +7,14 @@ import com.example.hrms.entities.concretes.Resume;
 import com.example.hrms.entities.dtos.addDtos.ResumeAddDto;
 import com.example.hrms.entities.dtos.updateDtos.ResumeUpdateDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.xml.crypto.Data;
 import java.io.IOException;
 
+@RestController
+@RequestMapping("/api/resumes")
+@CrossOrigin
 public class ResumeController {
 
     private final ResumeService resumeService;

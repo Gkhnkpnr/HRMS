@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69bb4a28-a9ba-4bbb-9c89-ce052d4cc8fb" name="Default Changelist" comment="Business katmanı sonrası hatalar giderildi.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hrms/api/controllers/CitiesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hrms/api/controllers/ResumeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/hrms/HrmsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/hrms/HrmsApplication.class" afterDir="false" />
-    </list>
+    <list default="true" id="69bb4a28-a9ba-4bbb-9c89-ce052d4cc8fb" name="Default Changelist" comment="City ve Resume Controllerları tamamlandı" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +94,7 @@
       <workItem from="1627884767755" duration="3664000" />
       <workItem from="1629710239591" duration="4701000" />
       <workItem from="1632250257851" duration="6248000" />
-      <workItem from="1632313537671" duration="9305000" />
+      <workItem from="1632313537671" duration="9608000" />
     </task>
     <task id="LOCAL-00001" summary="Project Created">
       <created>1624910109089</created>
@@ -151,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632423046497</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="City ve Resume Controllerları tamamlandı">
+      <created>1632569967672</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632569967672</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +184,7 @@
     <MESSAGE value="All Models Created." />
     <MESSAGE value="Business katmanı tamamlandı." />
     <MESSAGE value="Business katmanı sonrası hatalar giderildi." />
-    <option name="LAST_COMMIT_MESSAGE" value="Business katmanı sonrası hatalar giderildi." />
+    <MESSAGE value="City ve Resume Controllerları tamamlandı" />
+    <option name="LAST_COMMIT_MESSAGE" value="City ve Resume Controllerları tamamlandı" />
   </component>
 </project>
