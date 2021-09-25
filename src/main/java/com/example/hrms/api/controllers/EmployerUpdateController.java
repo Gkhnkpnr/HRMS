@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/employersUpdate")
+@CrossOrigin
 public class EmployerUpdateController {
 
     private final EmployerUpdateService employerUpdateService;
