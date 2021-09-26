@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69bb4a28-a9ba-4bbb-9c89-ce052d4cc8fb" name="Default Changelist" comment="EmployerUpdateController tamamlandı.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hrms/api/controllers/FavoriteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hrms/api/controllers/EmployerUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hrms/api/controllers/EmployerUpdateController.java" afterDir="false" />
+    <list default="true" id="69bb4a28-a9ba-4bbb-9c89-ce052d4cc8fb" name="Default Changelist" comment="FavoriteController tamamlandı.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hrms/api/controllers/JobPostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,7 @@
       <workItem from="1627884767755" duration="3664000" />
       <workItem from="1629710239591" duration="4701000" />
       <workItem from="1632250257851" duration="6248000" />
-      <workItem from="1632313537671" duration="13505000" />
+      <workItem from="1632313537671" duration="16074000" />
     </task>
     <task id="LOCAL-00001" summary="Project Created">
       <created>1624910109089</created>
@@ -190,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632573968901</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="FavoriteController tamamlandı.">
+      <created>1632574577099</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1632574577099</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +233,7 @@
     <MESSAGE value="Resume Controller tamamlandı." />
     <MESSAGE value="EducationController tamamlandı." />
     <MESSAGE value="EmployerUpdateController tamamlandı." />
-    <option name="LAST_COMMIT_MESSAGE" value="EmployerUpdateController tamamlandı." />
+    <MESSAGE value="FavoriteController tamamlandı." />
+    <option name="LAST_COMMIT_MESSAGE" value="FavoriteController tamamlandı." />
   </component>
 </project>
