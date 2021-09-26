@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/socialMedias")
+@CrossOrigin
 public class SocialMediaController {
 
     private final SocialMediaService socialMediaService;
