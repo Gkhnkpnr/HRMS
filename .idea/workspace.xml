@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69bb4a28-a9ba-4bbb-9c89-ce052d4cc8fb" name="Default Changelist" comment="JobExperienceController tamamlandı.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hrms/api/controllers/JobPositionController.java" afterDir="false" />
+    <list default="true" id="69bb4a28-a9ba-4bbb-9c89-ce052d4cc8fb" name="Default Changelist" comment="JobPositionController tamamlandı.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hrms/api/controllers/JobSeekerLanguageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +97,7 @@
       <workItem from="1627884767755" duration="3664000" />
       <workItem from="1629710239591" duration="4701000" />
       <workItem from="1632250257851" duration="6248000" />
-      <workItem from="1632313537671" duration="19519000" />
+      <workItem from="1632313537671" duration="21007000" />
     </task>
     <task id="LOCAL-00001" summary="Project Created">
       <created>1624910109089</created>
@@ -211,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632670052202</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="JobPositionController tamamlandı.">
+      <created>1632671778414</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1632671778414</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +257,7 @@
     <MESSAGE value="FavoriteController tamamlandı." />
     <MESSAGE value="JobPostController tamamlandı." />
     <MESSAGE value="JobExperienceController tamamlandı." />
-    <option name="LAST_COMMIT_MESSAGE" value="JobExperienceController tamamlandı." />
+    <MESSAGE value="JobPositionController tamamlandı." />
+    <option name="LAST_COMMIT_MESSAGE" value="JobPositionController tamamlandı." />
   </component>
 </project>
