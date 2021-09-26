@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69bb4a28-a9ba-4bbb-9c89-ce052d4cc8fb" name="Default Changelist" comment="SocialMediaController tamamlandı." />
+    <list default="true" id="69bb4a28-a9ba-4bbb-9c89-ce052d4cc8fb" name="Default Changelist" comment="SystemPersonalController tamamlandı." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +94,7 @@
       <workItem from="1627884767755" duration="3664000" />
       <workItem from="1629710239591" duration="4701000" />
       <workItem from="1632250257851" duration="6248000" />
-      <workItem from="1632313537671" duration="24027000" />
+      <workItem from="1632313537671" duration="26035000" />
     </task>
     <task id="LOCAL-00001" summary="Project Created">
       <created>1624910109089</created>
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632677195765</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="SystemPersonalController tamamlandı.">
+      <created>1632679214994</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1632679214994</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +302,7 @@
     <MESSAGE value="LanguageController tamamlandı." />
     <MESSAGE value="SchoolController tamamlandı." />
     <MESSAGE value="SocialMediaController tamamlandı." />
-    <option name="LAST_COMMIT_MESSAGE" value="SocialMediaController tamamlandı." />
+    <MESSAGE value="SystemPersonalController tamamlandı." />
+    <option name="LAST_COMMIT_MESSAGE" value="SystemPersonalController tamamlandı." />
   </component>
 </project>
