@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69bb4a28-a9ba-4bbb-9c89-ce052d4cc8fb" name="Default Changelist" comment="JobSeekerLanguageController tamamlandı." />
+    <list default="true" id="69bb4a28-a9ba-4bbb-9c89-ce052d4cc8fb" name="Default Changelist" comment="JobSeekerController tamamlandı." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +94,7 @@
       <workItem from="1627884767755" duration="3664000" />
       <workItem from="1629710239591" duration="4701000" />
       <workItem from="1632250257851" duration="6248000" />
-      <workItem from="1632313537671" duration="21611000" />
+      <workItem from="1632313537671" duration="22370000" />
     </task>
     <task id="LOCAL-00001" summary="Project Created">
       <created>1624910109089</created>
@@ -222,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632673778413</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="JobSeekerController tamamlandı.">
+      <created>1632674508883</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1632674508883</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +270,7 @@
     <MESSAGE value="JobExperienceController tamamlandı." />
     <MESSAGE value="JobPositionController tamamlandı." />
     <MESSAGE value="JobSeekerLanguageController tamamlandı." />
-    <option name="LAST_COMMIT_MESSAGE" value="JobSeekerLanguageController tamamlandı." />
+    <MESSAGE value="JobSeekerController tamamlandı." />
+    <option name="LAST_COMMIT_MESSAGE" value="JobSeekerController tamamlandı." />
   </component>
 </project>
